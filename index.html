@@ -4,136 +4,61 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Email Signature</title>
-    <style>
-      /* Basic Styles */
-      body {
-        font-family: Arial, sans-serif;
-      }
-      .signature-table {
-        width: 100%;
-        max-width: 350px;
-        padding: 5px;
-        border: 1px solid #ccc;
-        text-align: left;
-        background-color: #ffffff;
-      }
-      .name {
-        font-size: 16px;
-        font-weight: bold;
-        color: #48a33a;
-        margin: 15px 0;
-      }
-      .title {
-        font-size: 14px;
-        color: #333;
-        margin: 1px 0;
-      }
-      .email {
-        font-size: 13px;
-        color: #7abb2c;
-        text-decoration: none;
-        font-weight: bold;
-      }
-      .email:hover {
-        text-decoration: underline;
-      }
-      .logo img {
-        width: 100%;
-        max-width: 140px;
-        display: block;
-        margin-bottom: 15px;
-      }
-      .social-icon img {
-        width: 20px;
-        height: 20px;
-        vertical-align: middle;
-      }
-      .left-cell {
-        padding: 5px;
-        border-right: 1px solid #ccc;
-      }
-      .right-cell {
-        padding: 5px;
-
-      }
-
-
-       /* Responsive Design */
-       @media (max-width: 400px) {
-        .name {
-          font-size: 14px;
-        }
-        .title,
-        .email {
-          font-size: 12px;
-        }
-        .left-cell,
-        .right-cell {
-          padding: 5px;
-        }
-        .logo img {
-          max-width: 100px;
-        }
-      }
-
-      @media (min-width: 401px) and (max-width: 768px) {
-        .name {
-          font-size: 15px;
-        }
-        .title,
-        .email {
-          font-size: 13px;
-        }
-        .left-cell,
-        .right-cell {
-          padding: 8px;
-        }
-        .logo img {
-          max-width: 120px;
-        }
-      }
-
-      @media (min-width: 769px) {
-        .name {
-          font-size: 16px;
-        }
-        .title {
-          font-size: 14px;
-        }
-        .email {
-          font-size: 13px;
-        }
-        .left-cell,
-        .right-cell {
-          padding: 10px;
-        }
-        .logo img {
-          max-width: 140px;
-        }
-      }
-    </style>
   </head>
   <body>
-    <table class="signature-table" border="0" cellpadding="0" cellspacing="0">
+    <table
+      border="0"
+      cellpadding="0"
+      cellspacing="0"
+      style="width: 100%; max-width: 320px; border: 1px solid #ccc; text-align:left;" 
+    >
       <tr>
-        <td class="left-cell" width="60%">
-          <h3 class="name">Sandra Chisom Ejiba</h3>
-          <h5 class="title">Webmaster</h5>
+        <td width="60%" style="padding:5px; border-right: 1px solid #ccc; ">
+          <h3
+            style="
+              font-family: Arial, sans-serif;
+              font-size: 16px;
+              font-weight: bold;
+              color: #48a33a;
+             
+            "
+          >
+            Sandra Chisom Ejiba
+          </h3>
+          <h5
+            style="
+              font-family: Arial, sans-serif;
+              font-size: 14px;
+              font-weight: normal;
+              color: #333;
+              margin: 2px 0;
+            "
+          >
+            Webmaster
+          </h5>
           <a
             href="mailto:sandra.ejiba@tim89.net"
-            class="email"
+            style="
+              font-family: Arial, sans-serif;
+              font-size: 13px;
+              color: #7abb2c;
+              text-decoration: none;
+              font-weight: bold;
+            "
+            onmouseover="this.style.textDecoration='underline'"
+            onmouseout="this.style.textDecoration='none'"
           >
             sandra.ejiba@tim89.net
           </a>
           <p style="margin: 5px 0;">
-            <a href="https://www.linkedin.com/company/tim89-net/" target="_blank" class="social-icon">
-              <img src="https://tim89.net/images/linkedin-logo" alt="LinkedIn Logo"/>
+            <a href="https://www.linkedin.com/company/tim89-net/" target="_blank" style="text-decoration: none;">
+              <img src="https://tim89.net/images/linkedin-logo" alt="LinkedIn Logo" style="width: 20px; height: 20px; vertical-align: middle;"/>
             </a>
           </p>
         </td>
-        <td class="right-cell" width="40%">
-          <a href="https://tim89.net/" target="_blank" class="logo">
-            <img src="https://tim89.net/images/main-logo" alt="Company Logo"/>
+        <td width="40%" style="padding: 5px; text-align: center;">
+          <a href="https://tim89.net/" target="_blank">
+            <img src="https://tim89.net/images/main-logo" alt="Company Logo" style="width: 100%; max-width: 140px; display: block;"/>
           </a>
         </td>
       </tr>
